@@ -8,6 +8,7 @@ Introduction
 ============
 
 Consider the 3-dimensional graph below in the context of a cost function. Our goal is to move from the mountain in the top right corner (high cost) to the dark blue sea in the bottom left (low cost). The arrows represent the direction of steepest descent (negative gradient) from any given point--the direction that decreases the cost function as quickly as possible.
+
 ![alt text](https://github.com/theainerd/MLStudies/blob/master/The%20Math%20of%20Intelligence/Gradient%20Descent/images/gradient_descent.png)
 
 Starting at the top of the mountain, we take our first step downhill in the direction specified by the negative gradient. Next we recalculate the negative gradient (passing in the coordinates of our new point) and take another step in the direction it specifies. We continue this process iteratively until we get to the bottom of our graph, or to a point where we can no longer move downhill--a local minimum.
