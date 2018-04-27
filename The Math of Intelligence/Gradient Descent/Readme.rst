@@ -1,5 +1,3 @@
-_gradient_descent:
-
 Gradient Descent
 ================
 
@@ -10,17 +8,11 @@ Introduction
 ============
 
 Consider the 3-dimensional graph below in the context of a cost function. Our goal is to move from the mountain in the top right corner (high cost) to the dark blue sea in the bottom left (low cost). The arrows represent the direction of steepest descent (negative gradient) from any given point--the direction that decreases the cost function as quickly as possible.
-`Source <http://www.adalta.it/Pages/-GoldenSoftware-Surfer-010.asp>`_
-
-image:: images/gradient_descent.png
-    :align: center
+![alt text](images/gradient_descent.png)
 
 Starting at the top of the mountain, we take our first step downhill in the direction specified by the negative gradient. Next we recalculate the negative gradient (passing in the coordinates of our new point) and take another step in the direction it specifies. We continue this process iteratively until we get to the bottom of our graph, or to a point where we can no longer move downhill--a local minimum.
-`image source <https://youtu.be/5u0jaA3qAGk>`_.
 
-image:: images/gradient_descent_demystified.png
-    :align: center
-
+![alt text](images/gradient_descent_demystified.png)
 Learning rate
 =============
 
@@ -63,10 +55,7 @@ The gradient can be calculated as:
 
 To solve for the gradient, we iterate through our data points using our new :math:`m` and :math:`n` values and compute the partial derivatives. This new gradient tells us the slope of our cost function at our current position (current parameter values) and the direction we should move to update our parameters. The size of our update is controlled by the learning rate.
 
-
-.. rubric:: Code
-
-::
+```python
 
   def update_weights(m, b, X, Y, learning_rate):
       m_deriv = 0
@@ -85,6 +74,7 @@ To solve for the gradient, we iterate through our data points using our new :mat
       b -= (b_deriv / float(N)) * learning_rate
 
       return m, b
+```
 
 
 rubric:: References
