@@ -14,9 +14,16 @@ You will also need to have software installed to run and execute a [Jupyter Note
 
 If you do not have Python installed yet, it is highly recommended that you install the [Anaconda](http://continuum.io/downloads) distribution of Python, which already has the above packages and more included
 
-### Code
-
-Template code is provided in the notebook `titanic_survival_exploration.ipynb` notebook file. 
+## Project Structure
+- data
+	- raw
+		- train (Training audio files)
+		- test (Test audio files used for evaluation
+- libs
+	- classification (All scripts used for training and evaluation)
+-  notebooks
+- scripts (Executable scripts)
+- models (Pretrained Models) 
 
 ### Run
 
@@ -31,6 +38,17 @@ ipython notebook __.ipynb
 ```
 
 This will open the Jupyter Notebook software and project file in your web browser.
+
+## Architecture
+### Models used
+1. A variant of Convolutional LSTM (https://arxiv.org/pdf/1610.00277.pdf)
+
+### Training
+
+The model was trained using a GCP instance with the following specifications:
+- 
+-  
+- 
 
 ### Data
 
