@@ -58,6 +58,8 @@ to the first update vector of Adadelta.
 Adam can be viewed as a combination of RMSprop and momentum: RMSprop contributes the exponentially decaying average of past squared gradients, while momentum
 accounts for the exponentially decaying average of past gradients.
 
+![](https://github.com/theainerd/MLStudies/blob/master/Short%20Notes/images/contours_evaluation_optimizers.gif)
+
 In summary, **RMSprop** is an **extension of Adagrad** that deals with its radically diminishing learning
 rates. It is **identical to Adadelta**, except that Adadelta uses the RMS of parameter updates in the
 numerator update rule. Adam, finally, **adds bias-correction and momentum to RMSprop**. Insofar,
