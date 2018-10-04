@@ -30,3 +30,15 @@ The most obvious way to plot lots of variables is to augement the visualizations
 * Grouped Box Plot
 * Heatmap
 * Parallel Coordinates
+
+## Geospatial Data Analysis Plotting
+
+* Maps
+* Dots
+* Choropleths
+* Bins
+* Cartogram
+* Heatmap
+* Isopleths
+* Flow Maps
+* 3D
